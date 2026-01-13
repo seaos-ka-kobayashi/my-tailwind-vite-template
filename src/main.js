@@ -1,3 +1,3 @@
-import './style.css'
+import './style.scss' 
 
-console.log('Vite + Tailwind CSS setup is ready!')
+console.log('Vite + Tailwind + SASS setup is ready!')
