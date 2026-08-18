@@ -1,0 +1,20 @@
+// =========================================================================
+// モックアップ固有の自由記述スタイル（Sass 系統）
+//
+// Tailwind の系統（theme.css / tokens.css）とはパイプラインを分離している。
+// - ネスト・@use・@mixin など Sass の機能は自由に使ってよい
+// - Tailwind の @apply / theme() はこのファイルでは使わない
+// - デザイントークンは var(--token) で参照する（tokens.css の :root 変数）
+// =========================================================================
+
+.mock-note {
+  padding: calc(var(--spacing-base) * 2);
+  border: 1px dashed var(--color-content-border-color);
+  color: var(--color-foreground-subtle);
+  font-size: var(--font-size-sm);
+
+  strong {
+    color: var(--color-foreground-default);
+    font-weight: var(--font-weight-bold);
+  }
+}

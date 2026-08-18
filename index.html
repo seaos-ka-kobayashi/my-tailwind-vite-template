@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Tailwind App</title>
+    <title>SEAOS Mockup</title>
   </head>
-  <body class="bg-gray-100 flex items-center justify-center h-screen">
-    <div class="text-center">
-      <h1 class="text-3xl font-bold text-blue-600 underline">
-        Hello Tailwind + Vite!
-      </h1>
-      <p class="mt-4 text-gray-700">Edit src/index.html to start.</p>
+  <body class="bg-background-default text-foreground-default flex items-center justify-center h-screen">
+    <div class="bg-background-canvas p-4 text-center rounded-lg shadow">
+      <h1 class="text-3xl font-bold text-accent-default">SEAOS Mockup Template</h1>
+      <p class="mt-2 text-base text-foreground-subtle">
+        この index.html を編集してモックアップを作成してください。
+      </p>
+      <button
+        type="button"
+        class="mt-3 px-3 py-1 rounded bg-interaction-default text-background-canvas font-medium"
+      >
+        トークン由来のユーティリティの例
+      </button>
+      <p class="mock-note mt-3">
+        <strong>custom.scss</strong> のスタイル例（Sass 系統は var(--token) でトークンを参照）
+      </p>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -1,0 +1,104 @@
+/* =========================================================================
+   SEAOS デザイントークン（正典の写し）
+
+   写し元: seaosinc/seaos-design-system の docs/.vitepress/theme/tokens.css
+   正典はデザイントークンガイド（同リポジトリ docs/design-tokens/）であり、
+   ガイド更新時は本ファイルを追随させる。
+   本ファイルで値の追加・変更は行わない（モックアップ固有のスタイルは
+   custom.scss へ、ユーティリティ生成は theme.css へ）。
+   ========================================================================= */
+
+:root {
+  /* ---- Font Sizes（text-* ユーティリティの値の源泉） ---- */
+  --font-size-2xs: 0.625rem;
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.75rem;
+  --font-size-base: 0.875rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.125rem;
+  --font-size-2xl: 1.25rem;
+  --font-size-3xl: 1.5rem;
+  --font-size-4xl: 1.875rem;
+  --font-size-5xl: 2.25rem;
+  --font-size-6xl: 3rem;
+  --font-size-7xl: 3.75rem;
+  --font-size-8xl: 4.5rem;
+  --font-size-9xl: 6rem;
+
+  /* ---- Font Weights ---- */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ---- Font Leading（line-height） ----
+     ガイドが先行して定義する新規トークン（ライブラリ未反映・提案中）。
+     leading-none = 1 は大きいフォントの行重なり防止。 */
+  --font-leading-none: 1;
+  --font-leading-tight: 1.25;
+  --font-leading-normal: 1.5;
+  --font-leading-relaxed: 1.75;
+
+  /* ---- Spacing ----
+     8px 線形スケールの基準値（p-* 等の間隔ユーティリティの源泉）。 */
+  --spacing-base: 8px;
+
+  /* ---- Active ---- */
+  --color-active-light: #d9eef8;
+  --color-active-default: #89c1e0;
+  --color-active-dark: #008bd0;
+  --color-active-deep: #005885;
+
+  /* ---- Success ---- */
+  --color-success-light: #c1ffd6;
+  --color-success-default: #57cb44;
+  --color-success-dark: #47a838;
+  --color-success-deep: #35802a;
+
+  /* ---- Information ---- */
+  --color-information-light: #f0feff;
+  --color-information-default: #98d2ca;
+  --color-information-dark: #0e9da6;
+  --color-information-deep: #0b818a;
+
+  /* ---- Warning ---- */
+  --color-warning-light: #fffdd8;
+  --color-warning-default: #e9be74;
+  --color-warning-dark: #b28b00;
+  --color-warning-deep: #8f7000;
+
+  /* ---- Danger ---- */
+  --color-danger-light: #fbebef;
+  --color-danger-default: #fcb5aa;
+  --color-danger-dark: #dd5a6e;
+  --color-danger-deep: #b34959;
+
+  /* ---- Foreground ---- */
+  --color-foreground-default: #4a4a4a;
+  --color-foreground-subtle: #808080;
+  --color-foreground-disabled: #b3b3b3;
+
+  /* ---- Background ---- */
+  --color-background-canvas: #ffffff;
+  --color-background-default: #f0f0f0;
+  --color-background-subtle: #edf0f5;
+  --color-background-disabled: #656565;
+
+  /* ---- Accent ---- */
+  --color-accent-light: #4d7cc2;
+  --color-accent-default: #0b5ace;
+
+  /* ---- Interaction ---- */
+  --color-interaction-hover: #34baff;
+  --color-interaction-default: #0098e6;
+  --color-interaction-active: #006a9f;
+
+  /* ---- Content ---- */
+  --color-content-border-color: #999999;
+  /* content-bg-color は background-default のエイリアス（非推奨）。新規コードは background-default を使う。 */
+  --color-content-bg-color: var(--color-background-default);
+
+  /* ---- Other ---- */
+  /* white は background-canvas のエイリアス（非推奨）。新規コードは background-canvas を使う。 */
+  --color-white: var(--color-background-canvas);
+}

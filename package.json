@@ -1,5 +1,5 @@
 {
-  "name": "vite-tailwind-starter",
+  "name": "seaos-mockup-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,10 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.x",
-    "postcss": "^8.4.x",
+    "@tailwindcss/vite": "^4.1.17",
     "sass": "^1.70.0",
-    "tailwindcss": "^3.4.x",
-    "vite": "^5.x.x"
+    "tailwindcss": "^4.1.17",
+    "vite": "^7.0.0"
   }
 }

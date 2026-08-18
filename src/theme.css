@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+@import './tokens.css';
+
+/* =========================================================================
+   デザイントークン → Tailwind ユーティリティ生成
+
+   tokens.css の :root カスタムプロパティを @theme inline でユーティリティ化する
+   （seaos-ui-component-vue の src/assets/css/theme.css と同じパターン。
+   　語彙は正典＝デザイントークンガイドに準拠）。
+   inline 指定によりユーティリティは var(--token) を参照するだけになり、
+   値の源泉は tokens.css 一箇所に集約される。
+
+   このファイルは Tailwind のパイプラインで処理するため .css のままにする
+   （Sass に通さない）。モックアップ固有のスタイルは custom.scss へ。
+   ========================================================================= */
+@theme inline {
+  /* colors（bg-* / text-* / border-* 等を生成） */
+  --color-active-light: var(--color-active-light);
+  --color-active-default: var(--color-active-default);
+  --color-active-dark: var(--color-active-dark);
+  --color-active-deep: var(--color-active-deep);
+
+  --color-success-light: var(--color-success-light);
+  --color-success-default: var(--color-success-default);
+  --color-success-dark: var(--color-success-dark);
+  --color-success-deep: var(--color-success-deep);
+
+  --color-information-light: var(--color-information-light);
+  --color-information-default: var(--color-information-default);
+  --color-information-dark: var(--color-information-dark);
+  --color-information-deep: var(--color-information-deep);
+
+  --color-warning-light: var(--color-warning-light);
+  --color-warning-default: var(--color-warning-default);
+  --color-warning-dark: var(--color-warning-dark);
+  --color-warning-deep: var(--color-warning-deep);
+
+  --color-danger-light: var(--color-danger-light);
+  --color-danger-default: var(--color-danger-default);
+  --color-danger-dark: var(--color-danger-dark);
+  --color-danger-deep: var(--color-danger-deep);
+
+  --color-foreground-default: var(--color-foreground-default);
+  --color-foreground-subtle: var(--color-foreground-subtle);
+  --color-foreground-disabled: var(--color-foreground-disabled);
+
+  --color-background-canvas: var(--color-background-canvas);
+  --color-background-default: var(--color-background-default);
+  --color-background-subtle: var(--color-background-subtle);
+  --color-background-disabled: var(--color-background-disabled);
+
+  --color-accent-light: var(--color-accent-light);
+  --color-accent-default: var(--color-accent-default);
+
+  --color-interaction-hover: var(--color-interaction-hover);
+  --color-interaction-default: var(--color-interaction-default);
+  --color-interaction-active: var(--color-interaction-active);
+
+  --color-content-border-color: var(--color-content-border-color);
+  --color-content-bg-color: var(--color-content-bg-color);
+
+  --color-white: var(--color-white);
+
+  /* font-size（v4 は --text-* 名前空間 → text-2xs 等を生成） */
+  --text-2xs: var(--font-size-2xs);
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-base: var(--font-size-base);
+  --text-lg: var(--font-size-lg);
+  --text-xl: var(--font-size-xl);
+  --text-2xl: var(--font-size-2xl);
+  --text-3xl: var(--font-size-3xl);
+  --text-4xl: var(--font-size-4xl);
+  --text-5xl: var(--font-size-5xl);
+  --text-6xl: var(--font-size-6xl);
+  --text-7xl: var(--font-size-7xl);
+  --text-8xl: var(--font-size-8xl);
+  --text-9xl: var(--font-size-9xl);
+
+  /* font-weight（font-normal / font-medium / font-semibold / font-bold） */
+  --font-weight-normal: var(--font-weight-normal);
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-semibold: var(--font-weight-semibold);
+  --font-weight-bold: var(--font-weight-bold);
+
+  /* line-height（leading-none / leading-tight / leading-normal / leading-relaxed） */
+  --leading-none: var(--font-leading-none);
+  --leading-tight: var(--font-leading-tight);
+  --leading-normal: var(--font-leading-normal);
+  --leading-relaxed: var(--font-leading-relaxed);
+
+  /* spacing（8px 線形スケールの基準値。p-1.5 等の小数まで calc で自動生成） */
+  --spacing: var(--spacing-base);
+}
